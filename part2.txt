@@ -1,4 +1,3 @@
-Fill in the passphrases here.
 1: WongAvery
 2: iHateC++
 3: HTMLRules
