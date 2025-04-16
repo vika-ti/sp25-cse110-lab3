@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Meeting Minutes</title>
+        <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <h1>Pomodoro Timer First Brainstorm</h1>
+            <h2>Topic: Brainstorming</h2>
+            <h3>Date: 04-15-2025</h3>
+        </header>
+
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished">Unfinished Business</a></li>
+                <li><a href="#new">New Business</a></li>
+                <li><a href="#misc">Miscellaneous</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Feedback Form</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <hr>
+            <!--Attendance list-->
+            <section id="attendance">
+                <h2>Attendance</h2>
+                <p>List of attendees: Victoria, Alice, Sofia</p>
+            </section>
+
+            <!--Agenda of what the meeting will cover-->
+            <section id="agenda">
+                <h2>Agenda</h2>
+                <p>Today's Plan:</p>
+                <ul>
+                    <li>Project introduction</li>
+                    <li>Design ideas</li>
+                    <li>Assignment of roles</li>
+                </ul>
+                <p><strong>Important: </strong>Create initial project plan.</p>
+            </section>
+
+            <!--Unfinished business from the last meeting-->
+            <section id="unfinished">
+                <h2>Unfinished Business</h2>
+                <p>Topics carried over from last meeting:</p>
+                <ol>
+                    <li>Research</li>
+                    <li>Video presentation</li>
+                </ol>
+            </section>
+
+            <!--New business that need to be talked about-->
+            <section id="new">
+                <h2>New Business</h2>
+                <p>Topics for discussion:</p>
+                <ul>
+                    <li>Budget allocation</li>
+                    <li>Resource planning</li>
+                </ul>
+            </section>
+
+            <!--Any miscellaneous comments/questions/concerns-->
+            <section id="misc">
+                <h2>Miscellaneous - Comments &amp Questions</h2>
+                <p>Comments: <em>Review meeting notes and provide feedback below.</em></p>
+                <p>
+                    Questions: <i>Are the <b>next</b> steps clear?</i><br>
+                </p>
+                <div>This is the <span>website</span> for <a href="https://www.ucsd.edu/">UCSD</a>.</div>
+            </section>
+
+            <!--Media-->
+            <section id="media">
+                <h2>Diagrams</h2>
+                <p>Bubble Map Brainstorming:</p>
+                <img src="/media/bubblemap.png" alt="Bubble map">
+
+                <h2>Recordings</h2>
+                <p>Audio recording of the meeting:</p>
+                <audio controls>
+                    <source src="/media/jazzmusic.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p><i>Pixabay royalty free audio</i></p>
+
+                <p>Video recording of the meeting:</p>
+                <video controls width="320" height="240">
+                    <source src="/media/aerialdrone.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><i>Stock Footage provided by panya_99, from Pond5</i></p>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <details>
+                <summary>Additional Meeting Info</summary>
+                <p>Documents will be sent by email.</p>
+            </details>
+        </footer>
+
+        <!--Feedback form-->
+        <section id="form">
+            <h2>Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Meeting Feedback</legend>
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </p>
+                    <p>
+                        <label for="meeting-date">Meeting Date:</label>
+                        <input type="date" id="meeting-date" name="meeting-date">
+                    </p>
+                    <p>
+                        <label>Meeting satisfaction?</label><br>
+                        <input type="radio" id="excellent" name="satisfaction" value="excellent">
+                        <label for="excellent">Excellent</label><br>
+                        <input type="radio" id="good" name="satisfaction" value="good">
+                        <label for="good">Good</label><br>
+                        <input type="radio" id="fair" name="satisfaction" value="fair">
+                        <label for="fair">Fair</label><br>
+                        <input type="radio" id="poor" name="satisfaction" value="poor">
+                        <label for="poor">Poor</label>
+                    </p>
+                    <p>
+                        <label for="feedback">Feedback:</label><br>
+                        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                    </p>
+                    <p>
+                        <label for="checkbox">Agree to being contacted for clarification?</label>
+                        <input type="checkbox" id="checkbox" name="agree">
+                    </p>
+                    <p>
+                        <label for="topic-list">Topics of interest:</label>
+                        <input list="topics" id="topic-list" name="topic-list">
+                        <datalist id="topics">
+                            <option value="Managing">
+                            <option value="Budgeting">
+                            <option value="Planning"></option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="department">Department:</label>
+                        <select id="department" name="department">
+                            <option value="engineering">Engineering</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="sales">Sales</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button type="submit">Submit Feedback</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
