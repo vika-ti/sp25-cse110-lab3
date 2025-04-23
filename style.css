@@ -1,1 +1,185 @@
+/*body styled in html with fallback*/
 
+main, header, footer {
+    max-width: 900px; /* absolute unit */
+    margin: 2rem auto; /* relative unit, margin shorthand */
+    padding: 1.5rem 2rem; /* relative unit, padding shorthand  */
+    background-color: #FFFFFF; /* hex */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* rgba */
+    border-radius: 10px; /* border-radius */
+}
+  
+header {
+    text-align: center; /* text-align */
+    background-color: #FFFFFF; /* hex */
+    color: #2C3E50; /* hex */
+    padding: 1rem 0;
+    border-bottom: 2px solid #34495E; /* border-color, border-width, border-style */
+}
+  
+h2 {
+    color: hsl(25, 60%, 15%); /* hsl */
+}
+
+nav ul {
+    display: flex; /* flexbox */
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 1rem;
+    background-color: #2C3E50; /* hex */
+    border-radius: 8px; /* border-radius */
+}
+  
+nav a {
+    text-decoration: none; /* text-decoration */
+    color: #FFFFFF; /* hex */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+  
+nav a:hover {
+    color: color-mix(in srgb, #2C3E50 60%, orange 40%); /* color-mix, color name, :hover */
+}
+  
+section {
+    margin-top: 2rem; /* longhand margin */
+    padding: 1.2rem;
+    background-color: #ffffff; /* hex */
+    border-left: 5px solid #2C3E50; /* border short form with hex */
+    border-radius: 4px; /* border-radius */
+    position: static;
+}
+  
+form {
+    background-color: #fafafa; /* hex */
+    padding-top: 1.5rem;  /* longhand padding */
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 8px; /* border-radius */
+    border: 1px solid #e0e0e0; /* border */
+    position: relative;
+}
+  
+form fieldset {
+    border: none;
+}
+
+form button:active {
+    background-color: #1A1A1A;
+}
+  
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 12pt; /* absolute unit */
+}
+  
+form input[type="text"],
+form input[type="date"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 0.6rem; /* relative unit */
+    margin-bottom: 1rem;
+    border: 1px solid #ccc; /* border */
+    border-radius: 4px; /* border-radius */
+    font-family: inherit;
+}
+  
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 0.5rem; /* relative unit */
+}
+  
+form .radio-group label,
+form .checkbox-group label {
+    display: inline-block;
+    margin-right: 1.5rem; /* relative unit */
+    vertical-align: middle;
+}
+  
+form button {
+    background-color: #2C3E50; /* hex */
+    color: white;
+    padding: 0.6rem 1.2rem; /* relative unit */
+    border: none;
+    border-radius: 5px; /* border-radius */
+    cursor: pointer;
+    font-size: 1.2em; /* relative unit */
+}
+  
+form button:hover {
+    background-color: #34495E; /* hex, :hover */
+}
+
+.media-section {
+    display: grid; /* grid */
+    grid-template-columns: 1fr 1fr; /* grid-template-columns */
+    gap: 1.5rem; /* gap */
+    align-items: center; /* align-items */
+}
+
+img, video, audio {
+    display: block;
+    max-width: 6in; /* absolute unit */
+    margin: 1rem auto; /* relative unit, auto margins */
+    border-radius: 8px; /* border-radius, absolute unit */
+}
+
+video {
+    height: 240px; 
+    min-width: 300px; 
+}
+
+* {
+    box-sizing: border-box; 
+}
+  
+input[type="checkbox"] {
+    accent-color: #2C3E50;
+}
+
+form > label {
+    font-weight: bold; 
+}
+  
+h2 ~ p {
+    font-style: italic
+}
+  
+
+h2 + p {
+    font-size: 1.1rem;
+}
+  
+section:has(audio) {
+    border-top: 2px solid #ccc;
+}  
+  
+footer {
+    text-align: center; /* text-align */
+    font-size: 0.9rem;
+    color: color(display-p3 0.4 0.4 0.4); /* wider-gamut color */
+    margin-top: 3rem; /* relative unit */
+}
+  
+@media screen and (max-width: 600px) { /* media query */
+    nav ul {
+      flex-direction: column; /* flexbox */
+      gap: 1rem; /* relative unit */
+    }
+  
+    main, header, footer {
+      margin: 1rem; /* relative unit */
+      padding: 1rem; /* relative unit */
+    }
+
+    .media-section {
+        display: block; 
+    }
+}
+  
