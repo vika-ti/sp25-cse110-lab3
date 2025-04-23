@@ -4,12 +4,17 @@
         <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Meeting Minutes</title>
-        <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<style>
-	  	footer {
-	    		text-align: center;
-	    		background-color: lightgray;
+	  	body {
+            font-family: 'Merriweather', Georgia, serif;
+            background-color: var(--color-bg, #F4F4F4); /* fallback, background-color */
+            color: #1A1A1A; /* hex */
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
 	  	}
 	</style>
     </head>
@@ -84,19 +89,19 @@
             </section>
 
             <!--Media-->
-            <section id="media">
-                <h2>Diagrams</h2>
+            <section id="media" class="media-section">
+                <h2>Diagrams</h2><br>
                 <p style="color: orange;">Bubble Map Brainstorming:</p>
                 <img src="media/bubblemap.png" alt="Bubble map">
 
-                <h2>Recordings</h2>
+                <h2>Recordings</h2><br>
                 <p>Audio recording of the meeting:</p>
                 <audio controls>
                     <source src="media/jazzmusic.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
                 <p><i>Pixabay royalty free audio</i></p>
-
+                <br>
                 <p>Video recording of the meeting:</p>
                 <video controls width="320" height="240">
                     <source src="media/aerialdrone.mp4" type="video/mp4">
@@ -129,19 +134,15 @@
                         <label for="meeting-date">Meeting Date:</label>
                         <input type="date" id="meeting-date" name="meeting-date">
                     </p>
-                    <p>
-                        <label>Meeting satisfaction?</label><br>
-                        <input type="radio" id="excellent" name="satisfaction" value="excellent">
-                        <label for="excellent">Excellent</label><br>
-                        <input type="radio" id="good" name="satisfaction" value="good">
-                        <label for="good">Good</label><br>
-                        <input type="radio" id="fair" name="satisfaction" value="fair">
-                        <label for="fair">Fair</label><br>
-                        <input type="radio" id="poor" name="satisfaction" value="poor">
-                        <label for="poor">Poor</label>
+                    <p>Meeting satisfaction?</p>
+                    <p class="radio-group">
+                        <label><input type="radio" name="satisfaction" value="excellent"> Excellent</label><br>
+                        <label><input type="radio" name="satisfaction" value="good"> Good</label><br>
+                        <label><input type="radio" name="satisfaction" value="fair"> Fair</label><br>
+                        <label><input type="radio" name="satisfaction" value="poor"> Poor</label>
                     </p>
                     <p>
-                        <label for="feedback">Feedback:</label><br>
+                        <label for="feedback">Feedback:</label>
                         <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
                     </p>
                     <p>
